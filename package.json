@@ -1,0 +1,23 @@
+{
+  "name": "solais-server-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xmhscratch/solais-server-api.git"
+  },
+  "author": "xmhscratch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xmhscratch/solais-server-api/issues"
+  },
+  "homepage": "https://github.com/xmhscratch/solais-server-api#readme",
+  "dependencies": {
+    "lru-cache": "^4.1.1",
+    "mysql": "^2.14.1"
+  }
+}
