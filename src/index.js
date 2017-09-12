@@ -4,7 +4,11 @@ const handleErrorMiddware = require('./middwares/handle-error')
 class Server extends System.Module {
 
     static get $ID() {
-        return 'server-api'
+        return 'API'
+    }
+
+    static get Protection() {
+        return require('./protection')
     }
 
     constructor() {

@@ -16,5 +16,7 @@
     "url": "https://github.com/xmhscratch/solais-server-api/issues"
   },
   "homepage": "https://github.com/xmhscratch/solais-server-api#readme",
-  "dependencies": {}
+  "dependencies": {
+    "express-oauth-server": "^2.0.0"
+  }
 }
