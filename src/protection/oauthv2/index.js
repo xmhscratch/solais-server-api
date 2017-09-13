@@ -19,9 +19,10 @@ module.exports = function() {
         )
     }
 
-    const oauth = new OAuthServer({
-        model: defaultModel
-    })
+    defaultModel.getDb()
+    // const oauth = new OAuthServer({
+    //     model: defaultModel
+    // })
 
-    return oauth.authorize()
+    // return oauth.authorize()
 }

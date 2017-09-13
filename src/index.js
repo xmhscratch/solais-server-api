@@ -21,17 +21,17 @@ class Server extends System.Module {
     }
 
     setup() {
-        $appl.use(function(req, res, next) {
-            config('dispatcher.onHttpRequest', _.noop)(req)
-            return next()
-        })
-        $appl.use(allowCorsMiddware)
-        // $appl.use(oauth)
-        $appl.use(function(error, req, res, next) {
-            config('dispatcher.onHttpError', _.noop)(req)
-            return next(error)
-        })
-        $appl.use(handleErrorMiddware)
+        // $appl.use(function(req, res, next) {
+        //     config('dispatcher.onHttpRequest', _.noop)(req)
+        //     return next()
+        // })
+        // $appl.use(allowCorsMiddware)
+        // // $appl.use(oauth)
+        // $appl.use(function(error, req, res, next) {
+        //     config('dispatcher.onHttpError', _.noop)(req)
+        //     return next(error)
+        // })
+        // $appl.use(handleErrorMiddware)
     }
 }
 

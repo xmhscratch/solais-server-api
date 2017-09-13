@@ -1,15 +1,10 @@
 module.exports = function(connection, DataTypes) {
     const Client = connection.define('Client', {
         id: {
-            primaryKey: true,
-            type: DataTypes.STRING(36),
-            allowNull: false,
-        }
-        client_id: {
             type: DataTypes.STRING(36),
             allowNull: false,
         },
-        client_secret: {
+        secret: {
             type: DataTypes.STRING(36),
             allowNull: false,
         },
@@ -21,6 +16,10 @@ module.exports = function(connection, DataTypes) {
         timestamps: false,
         freezeTableName: true,
         tableName: 'clients',
+        indexes: [{
+            primaryKey: true,
+            fields: ['id', 'secret']
+        }]
     })
 
     Client.sync()
