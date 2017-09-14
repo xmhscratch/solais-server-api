@@ -16,7 +16,7 @@ class Model {
 
         return System.Orm.Db
             .connect(dbname, username, password, options)
-            .import(__dirname + 'schema')
+            .load(node.path.join(__dirname, 'schema'))
     }
 
     /*
